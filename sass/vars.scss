@@ -1,0 +1,23 @@
+
+$RobotoRegular:"RobotoRegular", sans-serif;
+$RobotoBold:"RobotoBold", sans-serif;
+$RobotoLight:"RobotoLight", sans-serif;
+$RobotoMedium:"RobotoMedium", sans-serif;
+$BebasRegular:"BebasRegular", sans-serif;
+$BebasBold:"BebasBold", sans-serif;
+$BebasLight:"BebasLight", sans-serif;
+$BebasThin:"BebasThin", sans-serif;
+
+
+@mixin more_btn() {
+  display: block;
+  min-width: 173px;
+  border-radius: 21px;
+  background-color: #00aeef;
+  color: #ffffff;
+  font-family: $RobotoRegular;
+  font-size: 16px;
+  margin: 120px auto 0;
+  padding: 10px 0;
+}
+

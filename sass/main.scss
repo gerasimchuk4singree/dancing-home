@@ -1,0 +1,284 @@
+
+@import "vars";
+@import "header";
+
+
+//Load Libs SASS
+@import "../app/libs/owl.carousel/src/scss/owl.carousel.scss";
+@import "../app/libs/pushy/scss/pushy.scss";
+@import "../app/libs/components-font-awesome/scss/font-awesome.scss";
+
+
+//Custom Styles Here
+
+.main_slider {
+  position: relative;
+  .item {
+    position: relative;
+    .caption {
+      position: absolute;
+      width: 100%;
+      bottom:233px;
+      .title {
+        color: #6d417c;
+        font-family: $BebasBold;
+        font-size: 94px;
+        line-height: 64px;
+        text-transform: uppercase;
+        letter-spacing: -1.88px;
+        margin:0;
+      }
+      .text {
+        color: #0a1e28;
+        font-family: $RobotoRegular;
+        font-size: 32px;
+        line-height: 42px;
+        padding-top: 25px;
+        display: block;
+        padding-bottom: 35px;
+      }
+      .btn {
+        min-width: 230px;
+        height: 65px;
+        border-radius: 6px;
+        border: 2px solid #0a1e28;
+        color: #0a1e28;
+        font-family: $RobotoBold;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: -0.48px;
+        padding:0;
+        outline:none;
+      }
+    }
+    .container {
+      position: relative;
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    width:100%;
+    top:55%;
+    left:0;
+    .owl-prev, .owl-next {
+      width: 108px;
+      height: 108px;
+      background-color: #ffffff;
+      font-size:0;
+      position: absolute;
+      line-height:108px;
+      text-align: center;
+    }
+    .owl-prev {
+      left:0;
+      &:before {
+        content: "\f053";
+        font-family: "FontAwesome";
+        color: #0a1e28;
+        font-size: 52px;
+      }
+    }
+    .owl-next {
+      right:0;
+      &:before {
+        content: "\f054";
+        font-family: "FontAwesome";
+        color: #0a1e28;
+        font-size: 52px;
+      }
+    }
+  }
+}
+.news_slider {
+  background-color: #ededed;
+  padding:55px 0 70px;
+  position: relative;
+  &:after {
+    content: "NEWS";
+    color: #d8dde0;
+    font-family: $BebasBold;
+    font-size: 326px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 6%;
+    z-index: -1;
+    bottom: -230px;
+  }
+  .date {
+    color: #434242;
+    font-family: $RobotoRegular;
+    font-size: 18px;
+  }
+  .title {
+    color: #6d417c;
+    font-family: $BebasBold;
+    font-size: 48px;
+  }
+  .text {
+    color: #666666;
+    font-family: $RobotoRegular;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .more {
+    color: #6d417c;
+    font-family: $RobotoBold;
+    font-size: 18px;
+    margin-top:20px;
+    float: right;
+    .icon {
+      color: #6d417c;
+      font-size: 24px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .owl-nav {
+    position: absolute;
+    width:100%;
+    top:33%;
+    left:0;
+    .owl-prev, .owl-next {
+      width: 108px;
+      height: 108px;
+      background-color: #ffffff;
+      font-size:0;
+      position: absolute;
+      line-height:108px;
+      text-align: center;
+    }
+    .owl-prev {
+      left:0;
+      &:before {
+        content: "\f053";
+        font-family: "FontAwesome";
+        color: #0a1e28;
+        font-size: 52px;
+      }
+    }
+    .owl-next {
+      right:0;
+      &:before {
+        content: "\f054";
+        font-family: "FontAwesome";
+        color: #0a1e28;
+        font-size: 52px;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom:18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .owl-dot {
+      width: 13px;
+      height: 13px;
+      background-color: #b2b09b;
+      border-radius: 50%;
+      margin:0 7px;
+      &.active {
+        background-color: #6d417c;
+      }
+    }
+  }
+}
+.our_block {
+  background-color: #201f1b;
+  padding: 222px 0 195px;
+  position: relative;
+  z-index: 1;
+  &-list {
+    display: flex;
+    justify-content:space-around;
+    li {
+      list-style: none;
+      width:30%;
+      text-align: center;
+      color: #fff;
+      .title {
+        font-family: $RobotoBold;
+        font-size: 42px;
+        line-height: 36px;
+        text-transform: uppercase;
+        letter-spacing: -0.84px;
+      }
+      .text {
+        font-family: $RobotoRegular;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top:20px;
+        padding-bottom:25px;
+      }
+      .btn {
+        min-width: 191px;
+        height: 53px;
+        border-radius: 6px;
+        background-color: #3c2861;
+        font-family: $RobotoBold;
+        font-size: 24px;
+        line-height:53px;
+        padding:0;
+        color: #fff;
+      }
+    }
+  }
+}
+.video_blocks {
+  display: flex;
+  justify-content:space-between;
+  height: 782px;
+  margin:30px 0;
+  .banner {
+    background-image: url('../img/big-photo.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+    width:45%;
+    position: relative;
+    .caption {
+      background: rgba( 0, 0, 0, 0.7);
+      padding: 70px 50px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 630px;
+      .title {
+        color: #ffffff;
+        font-family:$BebasBold;
+        font-size: 56px;
+        line-height: 58px;
+      }
+      .text {
+        color: #ffffff;
+        font-family: $RobotoRegular;
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+  }
+  .video {
+    width:53.5%;
+    height:100%;
+    img {
+      height:100%;
+      width:100%;
+      object-fit: cover;
+    }
+  }
+}
+.instagram {
+  display: flex;
+  justify-content:flex-end;
+  padding-left:45%;
+  .item {
+    width:16.6%;
+    &:last-child {
+      margin-right:-13.3%;
+    }
+  }
+}
+//ALWAYS END
+@import "media.scss";

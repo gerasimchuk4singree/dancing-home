@@ -1,0 +1,103 @@
+
+@import "vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	font-family: $RobotoRegular;
+	overflow-x: hidden;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  border: none;
+}
+input,
+button {
+	outline: none;
+	border: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+	outline:none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+}
+
+.hidden {
+	display: none;
+}
+.nopadding {
+	padding:0 !important;
+}
+header {
+	padding:10px 0 20px;
+	background-color: #000;
+	.top_inform {
+		display: flex;
+		justify-content:flex-end;
+		ul {
+			li {
+				list-style: none;
+				display: inline-block;
+				vertical-align: top;
+				margin:0 12px;
+				a {
+					color: #b2b09b;
+					font-family: $RobotoRegular;
+					font-size: 14px;
+				}
+			}
+		}
+		.email {
+			margin-right:30px;
+			span.txt {
+				color: #b2b09b;
+				font-family: $RobotoRegular;
+				font-size: 14px;
+			}
+			.icon {
+				color: #43aa8b;
+				font-size: 18px;
+			}
+			.icon_mail {
+				margin:0 20px;
+			}
+		}
+	}
+	.header_menu {
+		margin-top:45px;
+		display: flex;
+		justify-content:space-between;
+		margin-bottom:0;
+		li {
+			list-style: none;
+			a {
+				color: #aaaaaa;
+				font-family: $RobotoBold;
+				font-size: 20px;
+			}
+		}
+		.search_icon {
+			color: #6d417c;
+			font-size: 24px;
+		}
+	}
+}

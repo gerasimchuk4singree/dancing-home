@@ -1,0 +1,24 @@
+{
+  "name": "Aprils dancing feet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "app/libs"
+  ],
+  "authors": [
+    "gerasimchuk4clever-solution <gerasimchuk@clever-solution.com>"
+  ],
+  "description": "site dev",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "owl.carousel": "^2.2.1",
+    "pushy": "^1.1.2",
+    "components-font-awesome": "^4.7.0"
+  }
+}
