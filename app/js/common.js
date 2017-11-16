@@ -17,6 +17,17 @@ $(function() {
         loop:true
     });
 
+    // top search
+    $(".search_icon").on("click", function() {
+        $(this).siblings('input').toggle(function () {
+            if ($(this).is(":visible") == true) {
+                $(".search_icon").addClass('active');
+            } else {
+                $(".search_icon").removeClass('active');
+            }
+        })
+    });
+
 	$('.testimonials_slider').owlCarousel({
 		items:2,
 		dots:false,
