@@ -30,7 +30,7 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="top_inform">
+				<div class="top_inform hidden-xs">
 					<div class="email">
 						<span class="txt">Email Us:</span>
 						<a class="icon icon_mail" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
@@ -49,13 +49,64 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-3">
+			<div class="row flex-mob">
+				<div class="col-lg-4 col-md-3 col-xs-9 col-sm-12">
 					<a href="/" class="logo">
 						<img src="img/logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-lg-7 col-lg-offset-1 col-md-9 col-md-offset-0 text-right">
+				<div class="col-xs-2 col-xs-offset-1 visible-xs">
+					<button id="mob-btn" class="cmn-toggle-switch cmn-toggle-switch__htx">
+						<span>toggle menu</span>
+					</button>
+				</div>
+				<div class="mob-menu">
+					<div class="mob-menu-nav accordeon">
+						<dl>
+							<dt>
+								<a href="#">About</a>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">Classes</a>
+								<span class="icon"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+							</dt>
+							<dd>
+								<a href="#">Lorem Ipsum</a>
+								<a href="#">Dolor Isamet</a>
+								<a href="#">Charius Caminions</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">Registratio & Schedule</a>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">Gallery</a>
+							</dt>
+						</dl>
+						<dl>
+							<dt>
+								<a href="#">Contact</a>
+							</dt>
+						</dl>
+					</div>
+					<ul class="sign">
+						<li>
+							<a href="#"><span class="icon"><i class="fa fa-power-off" aria-hidden="true"></i></span>Sign up</a>
+						</li>
+						<li>
+							<a href="#"><span class="icon"><i class="fa fa-key" aria-hidden="true"></i></span>Parent Portal</a>
+						</li>
+					</ul>
+					<form class="mob-menu-search" action="#">
+						<input type="search" placeholder="Search">
+					</form>
+				</div>
+				<div class="col-lg-7 col-lg-offset-1 col-md-9 col-md-offset-0 text-right hidden-xs">
 					<ul class="header_menu">
 						<li>
 							<a href="#">About</a>
@@ -97,11 +148,11 @@
 			<img src="img/main-slider-img1.png" alt="">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 nopadding-mob">
 						<div class="caption">
 							<h2 class="title">LOREM IPSUM DOLOR ISAMET</h2>
 							<span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum</span>
-							<button class="btn">Learn more</button>
+							<a href="#" class="btn">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -111,11 +162,11 @@
 			<img src="img/main-slider-img1.png" alt="">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 nopadding-mob">
 						<div class="caption">
 							<h2 class="title">LOREM IPSUM DOLOR ISAMET</h2>
 							<span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum</span>
-							<button class="btn">Learn more</button>
+							<a href="#" class="btn">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -125,11 +176,11 @@
 			<img src="img/main-slider-img1.png" alt="">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+					<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 nopadding-mob">
 						<div class="caption">
 							<h2 class="title">LOREM IPSUM DOLOR ISAMET</h2>
 							<span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum</span>
-							<button class="btn">Learn more</button>
+							<a href="#" class="btn">Learn more</a>
 						</div>
 					</div>
 				</div>
@@ -141,26 +192,26 @@
 	<!--inform list start-->
 	<div class="inform_list">
 		<div class="container">
-			<div class="box text-center">
+			<a href="#" class="box text-center">
 				<div class="name">Teen Class</div>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
-				<button>Enroll now</button>
-			</div>
-			<div class="box text-center">
+				<div class="text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
+				<button class="hidden-xs">Enroll now</button>
+			</a>
+			<a href="#" class="box text-center">
 				<div class="name">For Elementary</div>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
-				<button>Enroll now</button>
-			</div>
-			<div class="box text-center">
+				<div class="text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
+				<button class="hidden-xs">Enroll now</button>
+			</a>
+			<a href="#" class="box text-center">
 				<div class="name">Company</div>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
-				<button>Enroll now</button>
-			</div>
-			<div class="box text-center">
+				<div class="text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
+				<button class="hidden-xs">Enroll now</button>
+			</a>
+			<a href="#" class="box text-center">
 				<div class="name">Special Offer</div>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
-				<button>Enroll now</button>
-			</div>
+				<div class="text hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa.</div>
+				<button class="hidden-xs">Enroll now</button>
+			</a>
 		</div>
 	</div>
 	<!--inform list end-->
@@ -170,11 +221,11 @@
 		<div class="item">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-8 col-sm-offset-2">
+					<div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 						<div class="date">April 25, 2018</div>
 						<div class="title">Title of News Sample</div>
 						<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa augue laoreet tellus, at fermentum sem lorem vel libero. Ut porta metus eget sodales feugiat.</div>
-						<a href="#" class="more">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+						<a href="#" class="more hidden-xs">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 					</div>
 				</div>
 			</div>
@@ -186,7 +237,7 @@
 						<div class="date">April 25, 2018</div>
 						<div class="title">Title of News Sample</div>
 						<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa augue laoreet tellus, at fermentum sem lorem vel libero. Ut porta metus eget sodales feugiat.</div>
-						<a href="#" class="more">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+						<a href="#" class="more hidden-xs">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 					</div>
 				</div>
 			</div>
@@ -198,7 +249,7 @@
 						<div class="date">April 25, 2018</div>
 						<div class="title">Title of News Sample</div>
 						<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat, dolor ac pulvinar interdum, massa augue laoreet tellus, at fermentum sem lorem vel libero. Ut porta metus eget sodales feugiat.</div>
-						<a href="#" class="more">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+						<a href="#" class="more hidden-xs">Read More <span class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 					</div>
 				</div>
 			</div>
@@ -244,14 +295,14 @@
 	<!--instagram start-->
 	<div class="instagram">
 		<div class="item text-center">
-			<img src="img/instagram-icon.png" alt="">
+			<img class="instagram_icon" src="img/instagram-icon.png" alt="">
 			<span class="instagram_text">@aprilsdancefeet</span>
 		</div>
 		<div class="item">
 			<div class="img">
 				<img src="img/instagram-photo1.png" alt="">
 			</div>
-			<div class="desc">
+			<div class="desc hidden-xs">
 				<div class="date">17 hours ago</div>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 				<div class="buttons">
@@ -265,7 +316,7 @@
 			<div class="img">
 				<img src="img/instagram-photo2.png" alt="">
 			</div>
-			<div class="desc">
+			<div class="desc hidden-xs">
 				<div class="date">17 hours ago</div>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 				<div class="buttons">
@@ -279,7 +330,7 @@
 			<div class="img">
 				<img src="img/instagram-photo3.png" alt="">
 			</div>
-			<div class="desc">
+			<div class="desc hidden-xs">
 				<div class="date">17 hours ago</div>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 				<div class="buttons">
@@ -293,7 +344,7 @@
 			<div class="img">
 				<img src="img/instagram-photo4.png" alt="">
 			</div>
-			<div class="desc">
+			<div class="desc hidden-xs">
 				<div class="date">17 hours ago</div>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 				<div class="buttons">
@@ -307,7 +358,7 @@
 			<div class="img">
 				<img src="img/instagram-photo2.png" alt="">
 			</div>
-			<div class="desc">
+			<div class="desc hidden-xs">
 				<div class="date">17 hours ago</div>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 				<div class="buttons">
@@ -331,7 +382,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<form action="#">
+					<form class="form_contact_us" action="#">
 						<div class="col-md-5">
 							<input type="text" placeholder="Name">
 							<input type="text" placeholder="Last Name">
@@ -358,6 +409,11 @@
 							<span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
 							<span class="txt">9411 AVE LBROOKLYN, <br> NY 11236</span>
 						</div>
+						<div class="follow_us visible-xs">
+							<span class="txt">Follow us:</span>
+							<a href="#" class="follow_us_facebook"><span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a>
+							<a href="#" class="follow_us_instagram"><span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+						</div>
 						<div class="map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.645528703586!2d-73.8993644902293!3d40.637698635918596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25cdba40e74e3%3A0x436afe14890b0f84!2s9411+Avenue+L%2C+Brooklyn%2C+NY+11236%2C+USA!5e0!3m2!1sen!2sua!4v1510827856284" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
@@ -371,7 +427,7 @@
 				<div class="row">
 					<div class="col-md-12 footer_bottom_social">
 						<div class="copyright">© 2017 Aprils Dancing Feet.</div>
-						<div class="icons">
+						<div class="icons hidden-xs">
 							<a href="#" class="footer_bottom_social_facebook"><span class="icon"><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a>
 							<a href="#" class="footer_bottom_social_instagram"><span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
 						</div>
@@ -383,7 +439,6 @@
 	<!--footer end-->
 	<!-- Site Overlay -->
 	<div class="site-overlay"></div>
-
 	<!-- Load Scripts Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.js", "async" : false},
