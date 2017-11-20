@@ -50,7 +50,7 @@
     font-size: 20px;
     line-height: 46px;
   }
-  .inform_list .container .box {
+  .inform_list .list .box {
     width:50%;
   }
   .video_blocks {
@@ -95,16 +95,16 @@
   .main_slider .item {
     clip-path: none;
   }
-  .inform_list .container {
+  .inform_list .list {
     padding:0;
   }
-  .inform_list .container .box  {
+  .inform_list .list .box  {
     background-image: none !important;
     width: 100%;
     min-height: 0;
     padding:40px 0;
   }
-  .inform_list .container .box .name:after {
+  .inform_list .list .box .name:after {
     display: none;
   }
   .inform_list {
