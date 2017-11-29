@@ -218,13 +218,6 @@
 		height: 100%;
 		filter: grayscale(100%);
 		-webkit-filter: grayscale(100%);
-		transition: opacity 0.3s;
-	  }
-	  &:hover > .img{
-		opacity: 1;
-		filter: initial;
-		-webkit-filter: initial;
-		transition: opacity 0.3s;
 	  }
 	  a {
 		padding: 195px 15px 0;
