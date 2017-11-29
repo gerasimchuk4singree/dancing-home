@@ -207,16 +207,35 @@
     .box {
       min-height: 520px;
       width: 25%;
-      background-size:cover;
-      background-repeat:no-repeat;
-      padding:195px 15px 0;
-      text-decoration: none;
+	  position: relative;
+	  & > .img{
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.2;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		transition: opacity 0.3s;
+	  }
+	  &:hover > .img{
+		opacity: 1;
+		filter: initial;
+		-webkit-filter: initial;
+		transition: opacity 0.3s;
+	  }
+	  a {
+		padding: 195px 15px 0;
+		text-decoration: none;
+		display: block;
+		position: relative;
+	  }
       * {
         color: #fff;
       }
       &:first-child {
-        background-image: url("../img/list-inform-img1.png");
-        background-color: #6d417c;
         button {
           &:hover {
             color: #6d417c;
@@ -224,8 +243,6 @@
         }
       }
       &:nth-child(2) {
-        background-color: rgba(67,170,139,1);
-        background-image: url('../img/list-inform-img2.png');
         button {
           &:hover {
             color: #1cbfa2;
@@ -233,8 +250,6 @@
         }
       }
       &:nth-child(3) {
-        background-color: rgba(201, 124, 33, 1);
-        background-image: url("../img/list-inform-img3.png");
         button {
           &:hover {
             color: #da8c30;
@@ -242,8 +257,6 @@
         }
       }
       &:nth-child(4) {
-        background-image: url("../img/list-inform-img4.png");
-        background-color: #1b526d;
         button {
           &:hover {
             color: #1b526d;
@@ -374,15 +387,28 @@
       }
     }
   }
+  .video-block {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 0;
+  }
   .video {
     width:53.5%;
     height:100%;
-    img {
+    iframe {
       height:100%;
       width:100%;
       object-fit: cover;
     }
   }
+}
+.validation-summary-errors{
+	color: red;
 }
 .instagram {
   display: flex;
@@ -583,13 +609,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 36px;
+      margin-right:20px;
       &_facebook {
         color: #5771a6;
-        font-size: 36px;
-        margin-right:20px;
       }
       &_instagram {
-        font-size: 36px;
         color: #6d417c;
       }
     }
