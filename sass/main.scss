@@ -76,6 +76,11 @@
       position: absolute;
       line-height:108px;
       text-align: center;
+      background-color: #fff;
+      @include transition(0.3s);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
     }
     .owl-prev {
       left:0;
@@ -121,6 +126,9 @@
     color: #6d417c;
     font-family: $BebasBold;
     font-size: 48px;
+    &:hover {
+      color: #543260;
+    }
   }
   .text {
     color: #666666;
@@ -153,11 +161,15 @@
     .owl-prev, .owl-next {
       width: 108px;
       height: 108px;
-      background-color: rgba(255, 255, 255, 0.7);
       font-size:0;
       position: absolute;
       line-height:108px;
       text-align: center;
+      background-color: #fff;
+      @include transition(0.3s);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+      }
     }
     .owl-prev {
       left:0;
@@ -208,6 +220,13 @@
       min-height: 520px;
       width: 25%;
 	  position: relative;
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      &:hover > .img {
+        opacity:0.2 !important;
+      }
 	  & > .img{
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -301,6 +320,17 @@
   padding: 222px 0 195px;
   position: relative;
   z-index: 1;
+  &:before {
+    content: '';
+    height:370px;
+    width:1px;
+    background-color: #d1d1d1;
+    position: absolute;
+    left:50%;
+    margin-left:-0.5px;
+    margin-top: -185px;
+    top: 50%;
+  }
   &-list {
     display: flex;
     justify-content:space-around;
@@ -425,12 +455,12 @@
       box-shadow: none;
       background: none;
     }
-    &:last-child {
-      margin-right:-7.3%;
-    }
+    //&:last-child {
+    //  margin-right:-7.3%;
+    //}
     .img {
       width:100%;
-      height: 359px;
+      height: 245px;
       img {
         width:100%;
         height:100%;
@@ -523,6 +553,7 @@
       font-size: 24px;
       text-transform: uppercase;
       float: right;
+      margin-top:20px;
       @include transition(0.4s);
       .icon {
         color: #ffffff;

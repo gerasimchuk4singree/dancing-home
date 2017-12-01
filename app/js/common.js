@@ -7,7 +7,6 @@ $(function() {
 		loop:true,
 		animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        autoplay:true,
         slideSpeed: 300
 	});
     $('.news_slider').owlCarousel({

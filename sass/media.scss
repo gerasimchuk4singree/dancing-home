@@ -291,6 +291,9 @@
     display: flex;
     align-items: center;
   }
+  .our_block:before {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
