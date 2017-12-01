@@ -211,13 +211,13 @@
 .inform_list {
   min-height: 520px;
   background: linear-gradient(to right, #6d417c 50%, #1b526d 50%);
-  margin-top:-110px;
+  margin-top:-160px;
   .list {
     display: flex;
     height: 100%;
     flex-wrap: wrap;
     .box {
-      min-height: 520px;
+      min-height: 570px;
       width: 25%;
 	  position: relative;
       a {
@@ -239,7 +239,7 @@
 		-webkit-filter: grayscale(100%);
 	  }
 	  a {
-		padding: 195px 15px 0;
+		padding: 245px 15px 0;
 		text-decoration: none;
 		display: block;
 		position: relative;
@@ -423,6 +423,21 @@
   .video {
     width:53.5%;
     height:100%;
+    .start-video {
+      display: block;
+      width:100%;
+      height:100%;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+    img {
+      height: 100%;
+      object-fit: cover;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
     iframe {
       height:100%;
       width:100%;
@@ -439,6 +454,7 @@
   margin-top:50px;
   overflow: hidden;
   padding-bottom:15px;
+  flex-wrap: wrap;
   &_text {
     color: #652480;
     font-family: $RobotoBold;
@@ -451,6 +467,7 @@
     margin: 0 0.8%;
     box-shadow: 0 0 8px 1px rgba(30, 28, 25, 0.2);
     background-color: #ffffff;
+    margin-bottom:20px;
     &:first-child {
       box-shadow: none;
       background: none;

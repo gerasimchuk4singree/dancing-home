@@ -311,7 +311,7 @@
 
     <div class="item">
 
-        <img src="http://aprilsdancingfeet2017.sites.immediate.nyc/media/72292/april-slider.jpg" alt="April Slider" />
+        <img src="img/main-slider-img1.png" alt="April Slider" />
 
         <div class="container">
             <div class="row">
@@ -467,7 +467,11 @@
         </div>
     </a>
     <div class="video">
-        <iframe class="video" src="https://www.youtube.com/embed/4elfy_216dI" frameborder="0" allowfullscreen></iframe>
+        <div id="player"></div>
+        <div id="thumbnail_container" class="thumbnail_container">
+            <img class="thumbnail" id="thumbnail" />
+        </div>
+        <a class="start-video"></a>
     </div>
 </div>
 <!--video end-->
@@ -477,6 +481,62 @@
     <div class="item text-center">
         <img class="instagram_icon" src="img/instagram-icon.png" alt="">
         <span class="instagram_text">@aprilsdancefeet</span>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="img/instagram-photo4.png" alt="">
+        </div>
+        <div class="desc hidden-xs">
+            <div class="date">17 hours ago</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="buttons">
+                <div class="like"><button><i class="fa fa-heart-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="comment"><button><i class="fa fa-comment-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="share"><button><i class="fa fa-share" aria-hidden="true"></i></button><span class="txt">Share</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="img/instagram-photo2.png" alt="">
+        </div>
+        <div class="desc hidden-xs">
+            <div class="date">17 hours ago</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="buttons">
+                <div class="like"><button><i class="fa fa-heart-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="comment"><button><i class="fa fa-comment-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="share"><button><i class="fa fa-share" aria-hidden="true"></i></button><span class="txt">Share</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="img/instagram-photo4.png" alt="">
+        </div>
+        <div class="desc hidden-xs">
+            <div class="date">17 hours ago</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="buttons">
+                <div class="like"><button><i class="fa fa-heart-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="comment"><button><i class="fa fa-comment-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="share"><button><i class="fa fa-share" aria-hidden="true"></i></button><span class="txt">Share</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="img">
+            <img src="img/instagram-photo2.png" alt="">
+        </div>
+        <div class="desc hidden-xs">
+            <div class="date">17 hours ago</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            <div class="buttons">
+                <div class="like"><button><i class="fa fa-heart-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="comment"><button><i class="fa fa-comment-o" aria-hidden="true"></i></button><span class="txt">24</span></div>
+                <div class="share"><button><i class="fa fa-share" aria-hidden="true"></i></button><span class="txt">Share</span></div>
+            </div>
+        </div>
     </div>
 </div>
 <!--instagram end-->
@@ -491,11 +551,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <!-- CONTACT FORM -->
 
                     <form action="/" class="form_contact_us" enctype="multipart/form-data" method="post">
-                        <div class="form col-md-5">
+                        <div class="form col-md-6">
 
                         <input class="form-1" data-val="true" data-val-required="The FirstName field is required." id="FirstName" name="FirstName" placeholder="Name" type="text" value="" />
                         <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
@@ -514,7 +574,7 @@
                         </div>
 
                     </div>
-                        <div id="blockMessage" class="form col-md-7">
+                        <div id="blockMessage" class="form col-md-6">
         <textarea class="form-7" cols="20" data-val="true" data-val-required="The Message field is required." id="Message" name="Message" placeholder="Classes of Interest" rows="2">
 </textarea>
                             <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
@@ -528,7 +588,7 @@
                     <!--// CONTACT FORM -->
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="tel"><span class="icon"><i class="fa fa-phone-square"></i></span> <a href="tel:718-272-1813" class="num">718-272-1813</a></div>
                     <div class="location"><span class="icon"><i class="fa fa-map-marker"></i></span> <span class="txt">9411 AVE LBROOKLYN, <br /> NY 11236</span></div>
                     <div class="follow_us visible-xs"><span class="txt">Follow us:</span> <a href="#" class="follow_us_facebook"><span class="icon"><i class="fa fa-facebook-square"></i></span></a> <a href="#" class="follow_us_instagram"><span class="icon"><i class="fa fa-instagram"></i></span></a></div>
