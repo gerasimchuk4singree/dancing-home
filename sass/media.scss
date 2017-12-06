@@ -1,4 +1,8 @@
-
+@media (min-width: 1600px) {
+  .main_slider .item {
+    max-height: none;
+  }
+}
 
 @media (max-width: 1199px) {
   .main_slider .owl-nav .owl-next, .main_slider .owl-nav .owl-prev, .news_slider .owl-nav .owl-prev, .news_slider .owl-nav .owl-next {
