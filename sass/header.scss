@@ -50,10 +50,17 @@ img {
 header {
 	padding:10px 0 0;
 	background-color: #000;
+	.logo {
+		img {
+			max-width:475px;
+		}
+	}
 	.top_inform {
 		display: flex;
 		justify-content:flex-end;
+		align-items:center;
 		ul {
+			margin-bottom: 0;
 			li {
 				list-style: none;
 				display: inline-block;
@@ -67,23 +74,35 @@ header {
 			}
 		}
 		.email {
-			margin-right:30px;
+			margin-right: 25px;
 			span.txt {
 				color: #b2b09b;
 				font-family: $RobotoRegular;
 				font-size: 14px;
 			}
 			.icon {
-				color: #43aa8b;
+				color: #9c5db2;
 				font-size: 18px;
 			}
-			.icon_mail {
-				margin:0 20px;
+		}
+		.phone-number {
+			color: #9c5db2;
+			margin-right: 25px;
+		}
+		.fb {
+			margin-right: 25px;
+			span.txt {
+				color: #b2b09b;
+				font-family: $RobotoRegular;
+				font-size: 14px;
+			}
+			.icon {
+				color: #9c5db2;
 			}
 		}
 	}
 	.header_menu {
-		margin-top:45px;
+		margin-top:40px;
 		margin-bottom:0;
 		li {
 			list-style: none;
@@ -99,11 +118,12 @@ header {
 			a {
 				color: #aaaaaa;
 				font-family: $RobotoBold;
-				font-size: 20px;
-				padding: 15px 10px 20px;
+				font-size: 19px;
+				padding: 15px 6px 20px;
 				display: block;
 				text-decoration: none;
 				position: relative;
+				text-transform: uppercase;
 				&:hover {
 					color: #fff;
 				}
