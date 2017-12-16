@@ -532,6 +532,11 @@
     }
   }
 }
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .footer {
   .contact_us {
     padding:90px 0;
@@ -540,6 +545,7 @@
     background-size:cover;
     background-repeat:no-repeat;
     margin-top:100px;
+    margin-bottom: 67px;
     .title {
       color: #6d417c;
       font-family: $BebasBold;

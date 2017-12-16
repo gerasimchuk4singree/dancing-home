@@ -8,10 +8,15 @@
   text-decoration: none;
 }
 
+html {
+	position: relative;
+	min-height: 100%;
+}
+
 body {
 	font-size: 16px;
 	min-width: 320px;
-	position: relative;
+	position: static;
 	line-height: 1.6;
 	font-family: $RobotoRegular;
 	overflow-x: hidden;

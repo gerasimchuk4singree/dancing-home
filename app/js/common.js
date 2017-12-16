@@ -65,10 +65,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 
 onYouTubeIframeAPIReady = function () {
+	var video_id = $('#player').attr('data_videoId');
     player = new YT.Player('player', {
         height: '244',
         width: '434',
-        videoId: '4elfy_216dI',  // youtube video id
+        videoId: video_id, //'4elfy_216dI',  // youtube video id
         playerVars: {
             'autoplay': 0,
             'rel': 0,
